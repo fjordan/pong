@@ -11,10 +11,10 @@
 #define GAME_STATE_PAUSED   1
 #define GAME_STATE_RUNNING  2
 
-#define STAR_SPEED_X 7
-#define STAR_SPEED_Y 7
+#define STAR_SPEED_X 4
+#define STAR_SPEED_Y 4
 
-#define COMP_MOVE_SPEED 3
+#define COMP_MOVE_SPEED 2
 
 #define SCORE_TO_WIN 3
 
@@ -74,7 +74,7 @@
         star.center = CGPointMake(star.center.x + star_velocity.x, star.center.y + star_velocity.y);
         star_shadow.center = CGPointMake(star.center.x + star_velocity.x, star.center.y + star_velocity.y);
         
-        if(star.center.x > self.view.bounds.size.width || star.center.x < 0) {
+        if(star.center.x >= self.view.bounds.size.width + 1 || star.center.x < 0.5) {
             star_velocity.x = -star_velocity.x;     
         }
         if(star.center.y > self.view.bounds.size.height || star.center.y < 0) {
