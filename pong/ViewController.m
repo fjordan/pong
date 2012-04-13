@@ -11,8 +11,8 @@
 #define GAME_STATE_PAUSED   1
 #define GAME_STATE_RUNNING  2
 
-#define STAR_SPEED_X 6
-#define STAR_SPEED_Y 6
+#define STAR_SPEED_X 7
+#define STAR_SPEED_Y 7
 
 #define COMP_MOVE_SPEED 3
 
@@ -24,8 +24,16 @@
 @synthesize star_shadow;
 @synthesize paddle_red;
 @synthesize paddle_blue;
+
+@synthesize victorious;
+@synthesize victorious_back;
+@synthesize defeat;
+@synthesize defeat_back;
+
 @synthesize player_score;
+@synthesize player_score_back;
 @synthesize computer_score;
+@synthesize computer_score_back;
 @synthesize star_velocity;
 @synthesize game_state;
 
@@ -47,6 +55,14 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     if(game_state == GAME_STATE_PAUSED) {
         start_message.hidden = YES;
+        computer_score_back.hidden = YES;
+        player_score_back.hidden = YES;
+        defeat_back.hidden = YES;
+        defeat.hidden = YES;
+        victorious_back.hidden = YES;
+        victorious.hidden = YES;
+        
+        
         game_state = GAME_STATE_RUNNING;
     } else if(game_state == GAME_STATE_RUNNING) {
         [self touchesMoved:touches withEvent:event];
@@ -81,7 +97,6 @@
                         star_velocity.x = -star_velocity.x;
                     }
                 }
-
             }
         }
         
@@ -118,10 +133,12 @@
         // Scoring 
         if(star.center.y <= 0) {
             player_score_value++;
+            player_score_back.hidden = NO;
             [self reset:(player_score_value >= SCORE_TO_WIN)];
         }
         if(star.center.y >= self.view.bounds.size.height) {
             computer_score_value++;
+            computer_score_back.hidden = NO;
             [self reset:(computer_score_value >= SCORE_TO_WIN)];
         }
 
@@ -141,9 +158,11 @@
     
     if(newGame) {
         if(computer_score_value > player_score_value) {
-            start_message.text = @"Computer Wins!";
+            defeat_back.hidden = NO;
+            defeat.hidden = NO;
         } else {
-            start_message.text = @"You Win!";
+            victorious_back.hidden = NO;
+            victorious.hidden = NO;
         }
 
         computer_score_value = 0;

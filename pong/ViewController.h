@@ -14,8 +14,15 @@
     IBOutlet UIImageView *paddle_red;
     IBOutlet UIImageView *paddle_blue;
     
+    IBOutlet UIImageView *victorious;
+    IBOutlet UIImageView *victorious_back;
+    IBOutlet UIImageView *defeat;
+    IBOutlet UIImageView *defeat_back;
+    
     IBOutlet UILabel *player_score;
+    IBOutlet UIImageView *player_score_back;
     IBOutlet UILabel *computer_score;    
+    IBOutlet UIImageView *computer_score_back;
     IBOutlet UILabel *start_message;
     
     CGPoint star_velocity;
@@ -31,9 +38,16 @@
 @property(strong, nonatomic) IBOutlet UIImageView *paddle_red;
 @property(strong, nonatomic) IBOutlet UIImageView *paddle_blue;
 
+@property(strong, nonatomic) IBOutlet UIImageView *victorious;
+@property(strong, nonatomic) IBOutlet UIImageView *victorious_back;
+@property(strong, nonatomic) IBOutlet UIImageView *defeat;
+@property(strong, nonatomic) IBOutlet UIImageView *defeat_back;
+
 @property(strong, nonatomic) IBOutlet UILabel *start_message;
 @property(strong, nonatomic) IBOutlet UILabel *player_score;
+@property(strong, nonatomic) IBOutlet UIImageView *player_score_back;
 @property(strong, nonatomic) IBOutlet UILabel *computer_score;
+@property(strong, nonatomic) IBOutlet UIImageView *computer_score_back;
 
 @property(nonatomic) CGPoint star_velocity;
 @property(nonatomic) NSInteger game_state;

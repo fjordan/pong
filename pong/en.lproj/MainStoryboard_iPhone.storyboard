@@ -69,24 +69,58 @@
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap To Begin!" lineBreakMode="tailTruncation" minimumFontSize="10" id="g8W-FT-4k4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap To Begin!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="g8W-FT-4k4">
                                 <rect key="frame" x="107" y="138" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" image="score-01.png" id="AQz-Pi-R2Y">
+                                <rect key="frame" x="0.0" y="420" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.79999999999999993" contentMode="scaleToFill" image="score-01.png" id="MSy-eC-MNV">
+                                <rect key="frame" x="0.0" y="4" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="scaleToFill" image="win-burst-01.png" id="kKe-Gl-NQb">
+                                <rect key="frame" x="0.0" y="9" width="320" height="451"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" image="lose-burst-01.png" id="B5R-g7-iJi">
+                                <rect key="frame" x="0.0" y="5" width="320" height="451"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="victorious-01.png" id="X2h-c9-tum">
+                                <rect key="frame" x="-5" y="195" width="330" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="defeat-01.png" id="KVN-ns-F5I">
+                                <rect key="frame" x="-5" y="195" width="330" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="computer_score" destination="mcm-tC-sad" id="aqX-Nh-2TM"/>
+                        <outlet property="computer_score_back" destination="MSy-eC-MNV" id="iZB-Vh-4gR"/>
+                        <outlet property="defeat" destination="KVN-ns-F5I" id="0be-fN-C9r"/>
+                        <outlet property="defeat_back" destination="B5R-g7-iJi" id="qv9-nf-Lja"/>
                         <outlet property="paddle_blue" destination="u3L-qL-cv9" id="gsP-kw-ojO"/>
                         <outlet property="paddle_red" destination="JSt-FC-9Ay" id="kag-3j-Jg3"/>
                         <outlet property="player_score" destination="9N0-Vs-IyH" id="w1h-5V-S5Y"/>
+                        <outlet property="player_score_back" destination="AQz-Pi-R2Y" id="p7h-Ze-UYG"/>
                         <outlet property="star" destination="CQy-sz-eJM" id="tlt-OK-Amt"/>
                         <outlet property="star_shadow" destination="Xst-Ut-ZYA" id="Tke-TP-FjI"/>
                         <outlet property="start_message" destination="g8W-FT-4k4" id="mIS-9v-bCX"/>
+                        <outlet property="victorious" destination="X2h-c9-tum" id="NJ8-Ac-u0A"/>
+                        <outlet property="victorious_back" destination="kKe-Gl-NQb" id="MVz-5k-KIX"/>
                     </connections>
                 </viewController>
             </objects>
@@ -96,23 +130,34 @@
     <resources>
         <image name="blue-paddle.png" width="130" height="38"/>
         <image name="court.png" width="320" height="480"/>
+        <image name="defeat-01.png" width="667" height="134"/>
+        <image name="lose-burst-01.png" width="667" height="667"/>
         <image name="red-paddle.png" width="130" height="38"/>
+        <image name="score-01.png" width="667" height="95"/>
         <image name="star-01.png" width="57" height="57"/>
         <image name="star-shadow-01.png" width="57" height="57"/>
         <image name="tiny-blue-paddle-01.png" width="34" height="44"/>
         <image name="tiny-red-paddle-01.png" width="34" height="44"/>
+        <image name="victorious-01.png" width="667" height="134"/>
+        <image name="win-burst-01.png" width="667" height="667"/>
     </resources>
     <classes>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="computer_score" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="computer_score_back" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="defeat" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="defeat_back" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="paddle_blue" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="paddle_red" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="player_score" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player_score_back" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="star" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="star_shadow" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="start_message" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="victorious" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="victorious_back" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>
