@@ -74,7 +74,13 @@
         star.center = CGPointMake(star.center.x + star_velocity.x, star.center.y + star_velocity.y);
         star_shadow.center = CGPointMake(star.center.x + star_velocity.x, star.center.y + star_velocity.y);
         
-        if(star.center.x >= self.view.bounds.size.width + 1 || star.center.x < 0.5) {
+        //Separate this collision detection so that you can move the star back into play
+        //fixes the bug where it sometimes get stuck going straight up one of the walls
+        if(star.center.x > self.view.bounds.size.width - star.frame.size.width/2){
+            star_shadow.center = CGPointMake(self.view.bounds.size.width - star.frame.size.width/2, star.center.y);
+            star_velocity.x = -star_velocity.x;     
+        }else if(star.center.x < 0+ star.frame.size.width/2) {
+            star_shadow.center = CGPointMake(0 +  star.frame.size.width/2, star.center.y);
             star_velocity.x = -star_velocity.x;     
         }
         if(star.center.y > self.view.bounds.size.height || star.center.y < 0) {
