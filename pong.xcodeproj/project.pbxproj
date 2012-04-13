@@ -21,6 +21,19 @@
 		A824D3F515388CA700B80A48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D315388CA700B80A48 /* Foundation.framework */; };
 		A824D3FD15388CA700B80A48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A824D3FB15388CA700B80A48 /* InfoPlist.strings */; };
 		A824D40015388CA700B80A48 /* pongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3FF15388CA700B80A48 /* pongTests.m */; };
+		A824D41615388EC300B80A48 /* court.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D40915388EC300B80A48 /* court.png */; };
+		A824D41715388EC300B80A48 /* score-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D40A15388EC300B80A48 /* score-01.png */; };
+		A824D41815388EC300B80A48 /* mask-background-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D40B15388EC300B80A48 /* mask-background-01.png */; };
+		A824D41915388EC300B80A48 /* defeat-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D40C15388EC300B80A48 /* defeat-01.png */; };
+		A824D41A15388EC300B80A48 /* victorious-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D40D15388EC300B80A48 /* victorious-01.png */; };
+		A824D41B15388EC300B80A48 /* win-burst-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D40E15388EC300B80A48 /* win-burst-01.png */; };
+		A824D41C15388EC300B80A48 /* lose-burst-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D40F15388EC300B80A48 /* lose-burst-01.png */; };
+		A824D41D15388EC300B80A48 /* tiny-red-paddle-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D41015388EC300B80A48 /* tiny-red-paddle-01.png */; };
+		A824D41E15388EC300B80A48 /* tiny-blue-paddle-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D41115388EC300B80A48 /* tiny-blue-paddle-01.png */; };
+		A824D41F15388EC300B80A48 /* star-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D41215388EC300B80A48 /* star-01.png */; };
+		A824D42015388EC300B80A48 /* star-shadow-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D41315388EC300B80A48 /* star-shadow-01.png */; };
+		A824D42115388EC300B80A48 /* red-paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D41415388EC300B80A48 /* red-paddle.png */; };
+		A824D42215388EC300B80A48 /* blue-paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = A824D41515388EC300B80A48 /* blue-paddle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +51,35 @@
 		A824D3D115388CA700B80A48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A824D3D315388CA700B80A48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A824D3D515388CA700B80A48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A824D3D915388CA700B80A48 /* pong-Info.plist */ = {isa = PBXFileReference; path = "pong-Info.plist"; sourceTree = "<group>"; };
+		A824D3D915388CA700B80A48 /* pong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pong-Info.plist"; sourceTree = "<group>"; };
 		A824D3DB15388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A824D3DD15388CA700B80A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A824D3DF15388CA700B80A48 /* pong-Prefix.pch */ = {isa = PBXFileReference; path = "pong-Prefix.pch"; sourceTree = "<group>"; };
-		A824D3E015388CA700B80A48 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A824D3DF15388CA700B80A48 /* pong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pong-Prefix.pch"; sourceTree = "<group>"; };
+		A824D3E015388CA700B80A48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A824D3E115388CA700B80A48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A824D3E415388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A824D3E715388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A824D3E915388CA700B80A48 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A824D3E915388CA700B80A48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A824D3EA15388CA700B80A48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A824D3F115388CA700B80A48 /* pongTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pongTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A824D3F215388CA700B80A48 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		A824D3FA15388CA700B80A48 /* pongTests-Info.plist */ = {isa = PBXFileReference; path = "pongTests-Info.plist"; sourceTree = "<group>"; };
+		A824D3FA15388CA700B80A48 /* pongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pongTests-Info.plist"; sourceTree = "<group>"; };
 		A824D3FC15388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A824D3FE15388CA700B80A48 /* pongTests.h */ = {isa = PBXFileReference; path = pongTests.h; sourceTree = "<group>"; };
+		A824D3FE15388CA700B80A48 /* pongTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pongTests.h; sourceTree = "<group>"; };
 		A824D3FF15388CA700B80A48 /* pongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pongTests.m; sourceTree = "<group>"; };
+		A824D40915388EC300B80A48 /* court.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = court.png; sourceTree = "<group>"; };
+		A824D40A15388EC300B80A48 /* score-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score-01.png"; sourceTree = "<group>"; };
+		A824D40B15388EC300B80A48 /* mask-background-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mask-background-01.png"; sourceTree = "<group>"; };
+		A824D40C15388EC300B80A48 /* defeat-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defeat-01.png"; sourceTree = "<group>"; };
+		A824D40D15388EC300B80A48 /* victorious-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "victorious-01.png"; sourceTree = "<group>"; };
+		A824D40E15388EC300B80A48 /* win-burst-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "win-burst-01.png"; sourceTree = "<group>"; };
+		A824D40F15388EC300B80A48 /* lose-burst-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lose-burst-01.png"; sourceTree = "<group>"; };
+		A824D41015388EC300B80A48 /* tiny-red-paddle-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny-red-paddle-01.png"; sourceTree = "<group>"; };
+		A824D41115388EC300B80A48 /* tiny-blue-paddle-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny-blue-paddle-01.png"; sourceTree = "<group>"; };
+		A824D41215388EC300B80A48 /* star-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-01.png"; sourceTree = "<group>"; };
+		A824D41315388EC300B80A48 /* star-shadow-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-shadow-01.png"; sourceTree = "<group>"; };
+		A824D41415388EC300B80A48 /* red-paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-paddle.png"; sourceTree = "<group>"; };
+		A824D41515388EC300B80A48 /* blue-paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-paddle.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +153,19 @@
 		A824D3D815388CA700B80A48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A824D40915388EC300B80A48 /* court.png */,
+				A824D40A15388EC300B80A48 /* score-01.png */,
+				A824D40B15388EC300B80A48 /* mask-background-01.png */,
+				A824D40C15388EC300B80A48 /* defeat-01.png */,
+				A824D40D15388EC300B80A48 /* victorious-01.png */,
+				A824D40E15388EC300B80A48 /* win-burst-01.png */,
+				A824D40F15388EC300B80A48 /* lose-burst-01.png */,
+				A824D41015388EC300B80A48 /* tiny-red-paddle-01.png */,
+				A824D41115388EC300B80A48 /* tiny-blue-paddle-01.png */,
+				A824D41215388EC300B80A48 /* star-01.png */,
+				A824D41315388EC300B80A48 /* star-shadow-01.png */,
+				A824D41415388EC300B80A48 /* red-paddle.png */,
+				A824D41515388EC300B80A48 /* blue-paddle.png */,
 				A824D3D915388CA700B80A48 /* pong-Info.plist */,
 				A824D3DA15388CA700B80A48 /* InfoPlist.strings */,
 				A824D3DD15388CA700B80A48 /* main.m */,
@@ -227,6 +266,19 @@
 				A824D3DC15388CA700B80A48 /* InfoPlist.strings in Resources */,
 				A824D3E515388CA700B80A48 /* MainStoryboard_iPhone.storyboard in Resources */,
 				A824D3E815388CA700B80A48 /* MainStoryboard_iPad.storyboard in Resources */,
+				A824D41615388EC300B80A48 /* court.png in Resources */,
+				A824D41715388EC300B80A48 /* score-01.png in Resources */,
+				A824D41815388EC300B80A48 /* mask-background-01.png in Resources */,
+				A824D41915388EC300B80A48 /* defeat-01.png in Resources */,
+				A824D41A15388EC300B80A48 /* victorious-01.png in Resources */,
+				A824D41B15388EC300B80A48 /* win-burst-01.png in Resources */,
+				A824D41C15388EC300B80A48 /* lose-burst-01.png in Resources */,
+				A824D41D15388EC300B80A48 /* tiny-red-paddle-01.png in Resources */,
+				A824D41E15388EC300B80A48 /* tiny-blue-paddle-01.png in Resources */,
+				A824D41F15388EC300B80A48 /* star-01.png in Resources */,
+				A824D42015388EC300B80A48 /* star-shadow-01.png in Resources */,
+				A824D42115388EC300B80A48 /* red-paddle.png in Resources */,
+				A824D42215388EC300B80A48 /* blue-paddle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
