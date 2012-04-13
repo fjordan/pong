@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846199B51538D70F00A1BA7A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846199B41538D70F00A1BA7A /* CFNetwork.framework */; };
+		846199B71538D71A00A1BA7A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846199B61538D71A00A1BA7A /* SystemConfiguration.framework */; };
+		846199B91538D72600A1BA7A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846199B81538D72600A1BA7A /* MobileCoreServices.framework */; };
+		846199BB1538D73900A1BA7A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 846199BA1538D73900A1BA7A /* libz.dylib */; };
+		846199BE1538D77200A1BA7A /* HighScoreModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199BD1538D77200A1BA7A /* HighScoreModalViewController.m */; };
+		846199C11538D79600A1BA7A /* HighScoreUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199C01538D79600A1BA7A /* HighScoreUpdater.m */; };
+		846199C41538DB9B00A1BA7A /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199C31538DB9B00A1BA7A /* Score.m */; };
+		846199C71538E49B00A1BA7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199C61538E49B00A1BA7A /* ViewController.m */; };
+		846199CE1538E85C00A1BA7A /* start-screen-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199CD1538E85C00A1BA7A /* start-screen-01.png */; };
+		846199D01538E86C00A1BA7A /* High-scores-screen-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199CF1538E86C00A1BA7A /* High-scores-screen-01.png */; };
+		846199D21538E87400A1BA7A /* high-scores-button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199D11538E87400A1BA7A /* high-scores-button-01.png */; };
+		846199D41538E88000A1BA7A /* Battle-button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199D31538E88000A1BA7A /* Battle-button-01.png */; };
+		846199D61538E88700A1BA7A /* back-button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199D51538E88700A1BA7A /* back-button-01.png */; };
 		A824D3D215388CA700B80A48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D115388CA700B80A48 /* UIKit.framework */; };
 		A824D3D415388CA700B80A48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D315388CA700B80A48 /* Foundation.framework */; };
 		A824D3D615388CA700B80A48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D515388CA700B80A48 /* CoreGraphics.framework */; };
@@ -15,7 +28,7 @@
 		A824D3E215388CA700B80A48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3E115388CA700B80A48 /* AppDelegate.m */; };
 		A824D3E515388CA700B80A48 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A824D3E315388CA700B80A48 /* MainStoryboard_iPhone.storyboard */; };
 		A824D3E815388CA700B80A48 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A824D3E615388CA700B80A48 /* MainStoryboard_iPad.storyboard */; };
-		A824D3EB15388CA700B80A48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3EA15388CA700B80A48 /* ViewController.m */; };
+		A824D3EB15388CA700B80A48 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3EA15388CA700B80A48 /* GameViewController.m */; };
 		A824D3F315388CA700B80A48 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3F215388CA700B80A48 /* SenTestingKit.framework */; };
 		A824D3F415388CA700B80A48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D115388CA700B80A48 /* UIKit.framework */; };
 		A824D3F515388CA700B80A48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D315388CA700B80A48 /* Foundation.framework */; };
@@ -47,6 +60,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		846199B41538D70F00A1BA7A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		846199B61538D71A00A1BA7A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		846199B81538D72600A1BA7A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		846199BA1538D73900A1BA7A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		846199BC1538D77200A1BA7A /* HighScoreModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreModalViewController.h; sourceTree = "<group>"; };
+		846199BD1538D77200A1BA7A /* HighScoreModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreModalViewController.m; sourceTree = "<group>"; };
+		846199BF1538D79600A1BA7A /* HighScoreUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreUpdater.h; sourceTree = "<group>"; };
+		846199C01538D79600A1BA7A /* HighScoreUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreUpdater.m; sourceTree = "<group>"; };
+		846199C21538DB9B00A1BA7A /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		846199C31538DB9B00A1BA7A /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		846199C51538E49B00A1BA7A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		846199C61538E49B00A1BA7A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		846199CD1538E85C00A1BA7A /* start-screen-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-screen-01.png"; sourceTree = "<group>"; };
+		846199CF1538E86C00A1BA7A /* High-scores-screen-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "High-scores-screen-01.png"; sourceTree = "<group>"; };
+		846199D11538E87400A1BA7A /* high-scores-button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "high-scores-button-01.png"; sourceTree = "<group>"; };
+		846199D31538E88000A1BA7A /* Battle-button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Battle-button-01.png"; sourceTree = "<group>"; };
+		846199D51538E88700A1BA7A /* back-button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button-01.png"; sourceTree = "<group>"; };
 		A824D3CD15388CA700B80A48 /* pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A824D3D115388CA700B80A48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A824D3D315388CA700B80A48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,8 +89,8 @@
 		A824D3E115388CA700B80A48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A824D3E415388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A824D3E715388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A824D3E915388CA700B80A48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A824D3EA15388CA700B80A48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A824D3E915388CA700B80A48 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A824D3EA15388CA700B80A48 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		A824D3F115388CA700B80A48 /* pongTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pongTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A824D3F215388CA700B80A48 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A824D3FA15388CA700B80A48 /* pongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pongTests-Info.plist"; sourceTree = "<group>"; };
@@ -87,6 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846199BB1538D73900A1BA7A /* libz.dylib in Frameworks */,
+				846199B91538D72600A1BA7A /* MobileCoreServices.framework in Frameworks */,
+				846199B71538D71A00A1BA7A /* SystemConfiguration.framework in Frameworks */,
+				846199B51538D70F00A1BA7A /* CFNetwork.framework in Frameworks */,
 				A824D3D215388CA700B80A48 /* UIKit.framework in Frameworks */,
 				A824D3D415388CA700B80A48 /* Foundation.framework in Frameworks */,
 				A824D3D615388CA700B80A48 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +140,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846199CC1538E83E00A1BA7A /* Game Images */ = {
+			isa = PBXGroup;
+			children = (
+				846199D51538E88700A1BA7A /* back-button-01.png */,
+				846199D31538E88000A1BA7A /* Battle-button-01.png */,
+				846199D11538E87400A1BA7A /* high-scores-button-01.png */,
+				846199CF1538E86C00A1BA7A /* High-scores-screen-01.png */,
+				846199CD1538E85C00A1BA7A /* start-screen-01.png */,
+				A824D40915388EC300B80A48 /* court.png */,
+				A824D40A15388EC300B80A48 /* score-01.png */,
+				A824D40B15388EC300B80A48 /* mask-background-01.png */,
+				A824D40C15388EC300B80A48 /* defeat-01.png */,
+				A824D40D15388EC300B80A48 /* victorious-01.png */,
+				A824D40E15388EC300B80A48 /* win-burst-01.png */,
+				A824D40F15388EC300B80A48 /* lose-burst-01.png */,
+				A824D41015388EC300B80A48 /* tiny-red-paddle-01.png */,
+				A824D41115388EC300B80A48 /* tiny-blue-paddle-01.png */,
+				A824D41215388EC300B80A48 /* star-01.png */,
+				A824D41315388EC300B80A48 /* star-shadow-01.png */,
+				A824D41415388EC300B80A48 /* red-paddle.png */,
+				A824D41515388EC300B80A48 /* blue-paddle.png */,
+			);
+			name = "Game Images";
+			sourceTree = "<group>";
+		};
 		A824D3C215388CA700B80A48 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +187,10 @@
 		A824D3D015388CA700B80A48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				846199BA1538D73900A1BA7A /* libz.dylib */,
+				846199B81538D72600A1BA7A /* MobileCoreServices.framework */,
+				846199B61538D71A00A1BA7A /* SystemConfiguration.framework */,
+				846199B41538D70F00A1BA7A /* CFNetwork.framework */,
 				A824D3D115388CA700B80A48 /* UIKit.framework */,
 				A824D3D315388CA700B80A48 /* Foundation.framework */,
 				A824D3D515388CA700B80A48 /* CoreGraphics.framework */,
@@ -141,10 +204,18 @@
 			children = (
 				A824D3E015388CA700B80A48 /* AppDelegate.h */,
 				A824D3E115388CA700B80A48 /* AppDelegate.m */,
+				846199C51538E49B00A1BA7A /* ViewController.h */,
+				846199C61538E49B00A1BA7A /* ViewController.m */,
 				A824D3E315388CA700B80A48 /* MainStoryboard_iPhone.storyboard */,
 				A824D3E615388CA700B80A48 /* MainStoryboard_iPad.storyboard */,
-				A824D3E915388CA700B80A48 /* ViewController.h */,
-				A824D3EA15388CA700B80A48 /* ViewController.m */,
+				A824D3E915388CA700B80A48 /* GameViewController.h */,
+				A824D3EA15388CA700B80A48 /* GameViewController.m */,
+				846199BC1538D77200A1BA7A /* HighScoreModalViewController.h */,
+				846199BD1538D77200A1BA7A /* HighScoreModalViewController.m */,
+				846199BF1538D79600A1BA7A /* HighScoreUpdater.h */,
+				846199C01538D79600A1BA7A /* HighScoreUpdater.m */,
+				846199C21538DB9B00A1BA7A /* Score.h */,
+				846199C31538DB9B00A1BA7A /* Score.m */,
 				A824D3D815388CA700B80A48 /* Supporting Files */,
 			);
 			path = pong;
@@ -153,19 +224,7 @@
 		A824D3D815388CA700B80A48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A824D40915388EC300B80A48 /* court.png */,
-				A824D40A15388EC300B80A48 /* score-01.png */,
-				A824D40B15388EC300B80A48 /* mask-background-01.png */,
-				A824D40C15388EC300B80A48 /* defeat-01.png */,
-				A824D40D15388EC300B80A48 /* victorious-01.png */,
-				A824D40E15388EC300B80A48 /* win-burst-01.png */,
-				A824D40F15388EC300B80A48 /* lose-burst-01.png */,
-				A824D41015388EC300B80A48 /* tiny-red-paddle-01.png */,
-				A824D41115388EC300B80A48 /* tiny-blue-paddle-01.png */,
-				A824D41215388EC300B80A48 /* star-01.png */,
-				A824D41315388EC300B80A48 /* star-shadow-01.png */,
-				A824D41415388EC300B80A48 /* red-paddle.png */,
-				A824D41515388EC300B80A48 /* blue-paddle.png */,
+				846199CC1538E83E00A1BA7A /* Game Images */,
 				A824D3D915388CA700B80A48 /* pong-Info.plist */,
 				A824D3DA15388CA700B80A48 /* InfoPlist.strings */,
 				A824D3DD15388CA700B80A48 /* main.m */,
@@ -279,6 +338,11 @@
 				A824D42015388EC300B80A48 /* star-shadow-01.png in Resources */,
 				A824D42115388EC300B80A48 /* red-paddle.png in Resources */,
 				A824D42215388EC300B80A48 /* blue-paddle.png in Resources */,
+				846199CE1538E85C00A1BA7A /* start-screen-01.png in Resources */,
+				846199D01538E86C00A1BA7A /* High-scores-screen-01.png in Resources */,
+				846199D21538E87400A1BA7A /* high-scores-button-01.png in Resources */,
+				846199D41538E88000A1BA7A /* Battle-button-01.png in Resources */,
+				846199D61538E88700A1BA7A /* back-button-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +379,11 @@
 			files = (
 				A824D3DE15388CA700B80A48 /* main.m in Sources */,
 				A824D3E215388CA700B80A48 /* AppDelegate.m in Sources */,
-				A824D3EB15388CA700B80A48 /* ViewController.m in Sources */,
+				A824D3EB15388CA700B80A48 /* GameViewController.m in Sources */,
+				846199BE1538D77200A1BA7A /* HighScoreModalViewController.m in Sources */,
+				846199C11538D79600A1BA7A /* HighScoreUpdater.m in Sources */,
+				846199C41538DB9B00A1BA7A /* Score.m in Sources */,
+				846199C71538E49B00A1BA7A /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
