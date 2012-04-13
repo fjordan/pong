@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A824D3D215388CA700B80A48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D115388CA700B80A48 /* UIKit.framework */; };
+		A824D3D415388CA700B80A48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D315388CA700B80A48 /* Foundation.framework */; };
+		A824D3D615388CA700B80A48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D515388CA700B80A48 /* CoreGraphics.framework */; };
+		A824D3DC15388CA700B80A48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A824D3DA15388CA700B80A48 /* InfoPlist.strings */; };
+		A824D3DE15388CA700B80A48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3DD15388CA700B80A48 /* main.m */; };
+		A824D3E215388CA700B80A48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3E115388CA700B80A48 /* AppDelegate.m */; };
+		A824D3E515388CA700B80A48 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A824D3E315388CA700B80A48 /* MainStoryboard_iPhone.storyboard */; };
+		A824D3E815388CA700B80A48 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A824D3E615388CA700B80A48 /* MainStoryboard_iPad.storyboard */; };
+		A824D3EB15388CA700B80A48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3EA15388CA700B80A48 /* ViewController.m */; };
+		A824D3F315388CA700B80A48 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3F215388CA700B80A48 /* SenTestingKit.framework */; };
+		A824D3F415388CA700B80A48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D115388CA700B80A48 /* UIKit.framework */; };
+		A824D3F515388CA700B80A48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D315388CA700B80A48 /* Foundation.framework */; };
+		A824D3FD15388CA700B80A48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A824D3FB15388CA700B80A48 /* InfoPlist.strings */; };
+		A824D40015388CA700B80A48 /* pongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A824D3FF15388CA700B80A48 /* pongTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A824D3F615388CA700B80A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A824D3C415388CA700B80A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A824D3CC15388CA700B80A48;
+			remoteInfo = pong;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A824D3CD15388CA700B80A48 /* pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A824D3D115388CA700B80A48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A824D3D315388CA700B80A48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A824D3D515388CA700B80A48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A824D3D915388CA700B80A48 /* pong-Info.plist */ = {isa = PBXFileReference; path = "pong-Info.plist"; sourceTree = "<group>"; };
+		A824D3DB15388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A824D3DD15388CA700B80A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A824D3DF15388CA700B80A48 /* pong-Prefix.pch */ = {isa = PBXFileReference; path = "pong-Prefix.pch"; sourceTree = "<group>"; };
+		A824D3E015388CA700B80A48 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A824D3E115388CA700B80A48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A824D3E415388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		A824D3E715388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		A824D3E915388CA700B80A48 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A824D3EA15388CA700B80A48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A824D3F115388CA700B80A48 /* pongTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pongTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A824D3F215388CA700B80A48 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A824D3FA15388CA700B80A48 /* pongTests-Info.plist */ = {isa = PBXFileReference; path = "pongTests-Info.plist"; sourceTree = "<group>"; };
+		A824D3FC15388CA700B80A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A824D3FE15388CA700B80A48 /* pongTests.h */ = {isa = PBXFileReference; path = pongTests.h; sourceTree = "<group>"; };
+		A824D3FF15388CA700B80A48 /* pongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pongTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A824D3CA15388CA700B80A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A824D3D215388CA700B80A48 /* UIKit.framework in Frameworks */,
+				A824D3D415388CA700B80A48 /* Foundation.framework in Frameworks */,
+				A824D3D615388CA700B80A48 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A824D3ED15388CA700B80A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A824D3F315388CA700B80A48 /* SenTestingKit.framework in Frameworks */,
+				A824D3F415388CA700B80A48 /* UIKit.framework in Frameworks */,
+				A824D3F515388CA700B80A48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A824D3C215388CA700B80A48 = {
+			isa = PBXGroup;
+			children = (
+				A824D3D715388CA700B80A48 /* pong */,
+				A824D3F815388CA700B80A48 /* pongTests */,
+				A824D3D015388CA700B80A48 /* Frameworks */,
+				A824D3CE15388CA700B80A48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A824D3CE15388CA700B80A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3CD15388CA700B80A48 /* pong.app */,
+				A824D3F115388CA700B80A48 /* pongTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A824D3D015388CA700B80A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3D115388CA700B80A48 /* UIKit.framework */,
+				A824D3D315388CA700B80A48 /* Foundation.framework */,
+				A824D3D515388CA700B80A48 /* CoreGraphics.framework */,
+				A824D3F215388CA700B80A48 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A824D3D715388CA700B80A48 /* pong */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3E015388CA700B80A48 /* AppDelegate.h */,
+				A824D3E115388CA700B80A48 /* AppDelegate.m */,
+				A824D3E315388CA700B80A48 /* MainStoryboard_iPhone.storyboard */,
+				A824D3E615388CA700B80A48 /* MainStoryboard_iPad.storyboard */,
+				A824D3E915388CA700B80A48 /* ViewController.h */,
+				A824D3EA15388CA700B80A48 /* ViewController.m */,
+				A824D3D815388CA700B80A48 /* Supporting Files */,
+			);
+			path = pong;
+			sourceTree = "<group>";
+		};
+		A824D3D815388CA700B80A48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3D915388CA700B80A48 /* pong-Info.plist */,
+				A824D3DA15388CA700B80A48 /* InfoPlist.strings */,
+				A824D3DD15388CA700B80A48 /* main.m */,
+				A824D3DF15388CA700B80A48 /* pong-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A824D3F815388CA700B80A48 /* pongTests */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3FE15388CA700B80A48 /* pongTests.h */,
+				A824D3FF15388CA700B80A48 /* pongTests.m */,
+				A824D3F915388CA700B80A48 /* Supporting Files */,
+			);
+			path = pongTests;
+			sourceTree = "<group>";
+		};
+		A824D3F915388CA700B80A48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3FA15388CA700B80A48 /* pongTests-Info.plist */,
+				A824D3FB15388CA700B80A48 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A824D3CC15388CA700B80A48 /* pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A824D40315388CA700B80A48 /* Build configuration list for PBXNativeTarget "pong" */;
+			buildPhases = (
+				A824D3C915388CA700B80A48 /* Sources */,
+				A824D3CA15388CA700B80A48 /* Frameworks */,
+				A824D3CB15388CA700B80A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pong;
+			productName = pong;
+			productReference = A824D3CD15388CA700B80A48 /* pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A824D3F015388CA700B80A48 /* pongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A824D40615388CA700B80A48 /* Build configuration list for PBXNativeTarget "pongTests" */;
+			buildPhases = (
+				A824D3EC15388CA700B80A48 /* Sources */,
+				A824D3ED15388CA700B80A48 /* Frameworks */,
+				A824D3EE15388CA700B80A48 /* Resources */,
+				A824D3EF15388CA700B80A48 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A824D3F715388CA700B80A48 /* PBXTargetDependency */,
+			);
+			name = pongTests;
+			productName = pongTests;
+			productReference = A824D3F115388CA700B80A48 /* pongTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A824D3C415388CA700B80A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A824D3C715388CA700B80A48 /* Build configuration list for PBXProject "pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A824D3C215388CA700B80A48;
+			productRefGroup = A824D3CE15388CA700B80A48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A824D3CC15388CA700B80A48 /* pong */,
+				A824D3F015388CA700B80A48 /* pongTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A824D3CB15388CA700B80A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A824D3DC15388CA700B80A48 /* InfoPlist.strings in Resources */,
+				A824D3E515388CA700B80A48 /* MainStoryboard_iPhone.storyboard in Resources */,
+				A824D3E815388CA700B80A48 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A824D3EE15388CA700B80A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A824D3FD15388CA700B80A48 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A824D3EF15388CA700B80A48 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A824D3C915388CA700B80A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A824D3DE15388CA700B80A48 /* main.m in Sources */,
+				A824D3E215388CA700B80A48 /* AppDelegate.m in Sources */,
+				A824D3EB15388CA700B80A48 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A824D3EC15388CA700B80A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A824D40015388CA700B80A48 /* pongTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A824D3F715388CA700B80A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A824D3CC15388CA700B80A48 /* pong */;
+			targetProxy = A824D3F615388CA700B80A48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A824D3DA15388CA700B80A48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A824D3DB15388CA700B80A48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A824D3E315388CA700B80A48 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A824D3E415388CA700B80A48 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A824D3E615388CA700B80A48 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A824D3E715388CA700B80A48 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A824D3FB15388CA700B80A48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A824D3FC15388CA700B80A48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A824D40115388CA700B80A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A824D40215388CA700B80A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A824D40415388CA700B80A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pong/pong-Prefix.pch";
+				INFOPLIST_FILE = "pong/pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A824D40515388CA700B80A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pong/pong-Prefix.pch";
+				INFOPLIST_FILE = "pong/pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A824D40715388CA700B80A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pong.app/pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pong/pong-Prefix.pch";
+				INFOPLIST_FILE = "pongTests/pongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A824D40815388CA700B80A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pong.app/pong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pong/pong-Prefix.pch";
+				INFOPLIST_FILE = "pongTests/pongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A824D3C715388CA700B80A48 /* Build configuration list for PBXProject "pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A824D40115388CA700B80A48 /* Debug */,
+				A824D40215388CA700B80A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A824D40315388CA700B80A48 /* Build configuration list for PBXNativeTarget "pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A824D40415388CA700B80A48 /* Debug */,
+				A824D40515388CA700B80A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A824D40615388CA700B80A48 /* Build configuration list for PBXNativeTarget "pongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A824D40715388CA700B80A48 /* Debug */,
+				A824D40815388CA700B80A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A824D3C415388CA700B80A48 /* Project object */;
+}
