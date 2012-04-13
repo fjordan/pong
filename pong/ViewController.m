@@ -29,7 +29,6 @@
 @synthesize star_velocity;
 @synthesize game_state;
 
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -73,14 +72,12 @@
                 NSLog(@"%fl %fl", star.center.x, paddle_blue.center.x);
                 
                 
-                if(star_velocity.x) {
-                    // Left to Right -->
-                    if(star.center.x > paddle_blue.center.x) {
+                if(star_velocity.x > 0) {
+                    if(star.center.x < paddle_blue.center.x) {
                         star_velocity.x = -star_velocity.x;
                     }
                 } else {
-                    // Right to Left <--
-                    if(star.center.x < paddle_blue.center.x) {
+                    if(star.center.x > paddle_blue.center.x) {
                         star_velocity.x = -star_velocity.x;
                     }
                 }
@@ -95,21 +92,19 @@
                 NSLog(@"%fl %fl", star.center.x, paddle_red.center.x);
                 
 
-                if(star_velocity.x) {
-                    // Left to Right -->
-                    if(star.center.x > paddle_red.center.x) {
+                if(star_velocity.x > 0) {
+                    if(star.center.x < paddle_red.center.x) {
                         star_velocity.x = -star_velocity.x;
                     }
                 } else {
-                    // Right to Left <--
-                    if(star.center.x < paddle_red.center.x) {
+                    if(star.center.x > paddle_red.center.x) {
                         star_velocity.x = -star_velocity.x;
                     }
                 }
             }
         }
         
-        // Computer side of the court
+        // Simple AI
         if(star.center.y <= self.view.center.y) {
             if(star.center.x > paddle_blue.center.x) {
                 paddle_blue.center = CGPointMake(paddle_blue.center.x + COMP_MOVE_SPEED, paddle_blue.center.y);
@@ -119,11 +114,45 @@
             }
 
         }
+        
+        // Scoring 
+        if(star.center.y <= 0) {
+            player_score_value++;
+            [self reset:(player_score_value >= SCORE_TO_WIN)];
+        }
+        if(star.center.y >= self.view.bounds.size.height) {
+            computer_score_value++;
+            [self reset:(computer_score_value >= SCORE_TO_WIN)];
+        }
+
+        
+        
     } else {
         if(start_message.hidden) {
             start_message.hidden = NO;
         }
     }
+}
+
+- (void)reset:(BOOL)newGame {
+    self.game_state = GAME_STATE_PAUSED;
+    star.center = self.view.center;
+    star_shadow.center = CGPointMake(self.view.center.x - 5, self.view.center.y - 5);
+    
+    if(newGame) {
+        if(computer_score_value > player_score_value) {
+            start_message.text = @"Computer Wins!";
+        } else {
+            start_message.text = @"You Win!";
+        }
+
+        computer_score_value = 0;
+        player_score_value = 0;
+    } else {
+        start_message.text = @"Tap To Begin!";
+    }
+    player_score.text = [NSString stringWithFormat:@"%d", player_score_value];
+    computer_score.text = [NSString stringWithFormat:@"%d", computer_score_value];
 }
 
 - (void)viewDidLoad
@@ -132,7 +161,7 @@
 	
     self.game_state = GAME_STATE_PAUSED;
     star_velocity = CGPointMake(STAR_SPEED_X, STAR_SPEED_Y);
-    [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(gameLoop) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.018 target:self selector:@selector(gameLoop) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidUnload

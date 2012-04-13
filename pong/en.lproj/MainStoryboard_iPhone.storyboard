@@ -69,6 +69,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap To Begin!" lineBreakMode="tailTruncation" minimumFontSize="10" id="g8W-FT-4k4">
+                                <rect key="frame" x="107" y="138" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -79,6 +86,7 @@
                         <outlet property="player_score" destination="9N0-Vs-IyH" id="w1h-5V-S5Y"/>
                         <outlet property="star" destination="CQy-sz-eJM" id="tlt-OK-Amt"/>
                         <outlet property="star_shadow" destination="Xst-Ut-ZYA" id="Tke-TP-FjI"/>
+                        <outlet property="start_message" destination="g8W-FT-4k4" id="mIS-9v-bCX"/>
                     </connections>
                 </viewController>
             </objects>

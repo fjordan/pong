@@ -19,7 +19,11 @@
     IBOutlet UILabel *start_message;
     
     CGPoint star_velocity;
+    
     NSInteger game_state;
+    
+    NSInteger player_score_value;
+    NSInteger computer_score_value;
 }
 
 @property(strong, nonatomic) IBOutlet UIImageView *star;
@@ -33,5 +37,7 @@
 
 @property(nonatomic) CGPoint star_velocity;
 @property(nonatomic) NSInteger game_state;
+
+- (void)reset:(BOOL)newGame;
 
 @end
