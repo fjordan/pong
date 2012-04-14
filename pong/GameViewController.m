@@ -165,14 +165,19 @@
             if(game_state != GAME_STATE_RUNNING_INFINITE){
                 [self reset:(computer_score_value >= SCORE_TO_WIN)];
             }else{
-                if((computer_score_value >= SCORE_TO_WIN)&&([highScoreUpdater isLocalHighScore:[NSNumber numberWithInt:player_score_value]] || [highScoreUpdater isNetworkHighScore:[NSNumber numberWithInt:player_score_value]])){
+                if((computer_score_value >= SCORE_TO_WIN)&&([highScoreUpdater isNetworkHighScore:[NSNumber numberWithInt:player_score_value]])){
                     NSLog(@"Get Initials");
                     NSUInteger temp = player_score_value;
-                    [self reset:TRUE];
                     [self getInitialsForScore:temp];
+                    [self reset:TRUE];
+
                     
-                }else{
+                }else if(computer_score_value >= SCORE_TO_WIN){
+                    NSLog(@"Else if");
                     [self reset:(computer_score_value >= SCORE_TO_WIN)];
+                }else{
+                    NSLog(@"Else");
+                    [self resetInfinite];
                 }
             }
         }
@@ -222,6 +227,7 @@
 
 -(void)getInitialsForScore:(NSUInteger)newScore{
     game_state == GAME_STATE_HIGHSCORE;
+    currentSavedScore = newScore;
     NSString * title = [NSString stringWithFormat:@"Score: %i  - Enter your initials:", newScore];
     UIAlertView * highScorePrompt = [[UIAlertView alloc] initWithTitle:title message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Submit" , nil];
     initialsTextField = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 45.0, 260.0, 25.0)]; 
@@ -237,6 +243,7 @@
     {
         NSString *entered = [initialsTextField text];
         NSLog(@"You typed: %@", entered);
+        [highScoreUpdater updateWithScore:[NSNumber numberWithInt:currentSavedScore] andInitials:entered];
     }
     
     game_state == GAME_STATE_PAUSED;

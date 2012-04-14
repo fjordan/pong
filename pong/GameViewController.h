@@ -44,6 +44,8 @@ typedef enum{
     
     HighScoreUpdater * highScoreUpdater;
     
+    NSUInteger currentSavedScore;
+    
     UITextField *initialsTextField;
 }
 
