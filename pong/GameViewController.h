@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HighScoreUpdater.h"
 
 
 typedef enum{
     GAME_STATE_PAUSED,
     GAME_STATE_RUNNING,
+    GAME_STATE_RUNNING_INFINITE,
     GAME_STATE_HIGHSCORE
     
 } GameStateType;
@@ -39,6 +41,10 @@ typedef enum{
     
     NSInteger player_score_value;
     NSInteger computer_score_value;
+    
+    HighScoreUpdater * highScoreUpdater;
+    
+    UITextField *initialsTextField;
 }
 
 @property(strong, nonatomic) IBOutlet UIImageView *star;
@@ -57,9 +63,12 @@ typedef enum{
 @property(strong, nonatomic) IBOutlet UILabel *computer_score;
 @property(strong, nonatomic) IBOutlet UIImageView *computer_score_back;
 
+-(void)resetInfinite;
+
 @property(nonatomic) CGPoint star_velocity;
 @property(nonatomic) GameStateType game_state;
 
 - (void)reset:(BOOL)newGame;
+-(void)getInitialsForScore:(NSUInteger)newScore;
 
 @end

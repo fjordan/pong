@@ -12,23 +12,4 @@
 @synthesize score = _score;
 @synthesize initials = _initials;
 
-
--(id)initWithScore:(NSNumber *)scoreIn andInitials:(NSString *)initialsIn{
-    self = [super init];
-    if(self){
-        self.score = scoreIn;
-        self.initials = initialsIn;
-        
-    }
-    
-    return self;
-    
-}
-
-
--(BOOL)isGreaterThan:(Score *)rightScore{
-    return self.score > rightScore.score;
-    
-}
-
 @end

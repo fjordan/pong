@@ -16,7 +16,7 @@
 
 #define COMP_MOVE_SPEED 2
 
-#define SCORE_TO_WIN 3
+#define SCORE_TO_WIN 1
 
 @implementation GameViewController
 
@@ -41,7 +41,8 @@
 -(id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-       
+        highScoreUpdater = [[HighScoreUpdater alloc] init];
+
         
     }
     
@@ -75,20 +76,20 @@
         victorious.hidden = YES;
         
         
-        game_state = GAME_STATE_RUNNING;
-    } else if(game_state == GAME_STATE_RUNNING) {
+        game_state = GAME_STATE_RUNNING_INFINITE;
+    } else if(game_state == GAME_STATE_RUNNING || game_state == GAME_STATE_RUNNING_INFINITE) {
         [self touchesMoved:touches withEvent:event];
     }
 }
 
 - (void)gameLoop {
-    if(game_state == GAME_STATE_RUNNING) {
+    if(game_state == GAME_STATE_RUNNING || game_state == GAME_STATE_RUNNING_INFINITE) {
         star.center = CGPointMake(star.center.x + star_velocity.x, star.center.y + star_velocity.y);
         star_shadow.center = CGPointMake(star.center.x + star_velocity.x, star.center.y + star_velocity.y);
         
         //Separate this collision detection so that you can move the star back into play
         //fixes the bug where it sometimes get stuck going straight up one of the walls
-        if(star.center.x > self.view.bounds.size.width - star.frame.size.width/2){
+        if(star.center.x > self.view.bounds.size.width - star.frame.size.width/2 || star.center.x < 0){
             star_shadow.center = CGPointMake(self.view.bounds.size.width - star.frame.size.width/2, star.center.y);
             star_velocity.x = -star_velocity.x;     
         }else if(star.center.x < 0+ star.frame.size.width/2) {
@@ -152,12 +153,28 @@
         if(star.center.y <= 0) {
             player_score_value++;
             player_score_back.hidden = NO;
-            [self reset:(player_score_value >= SCORE_TO_WIN)];
+            if(game_state == GAME_STATE_RUNNING){
+                [self reset:(player_score_value >= SCORE_TO_WIN)];
+            }else{
+                [self resetInfinite];
+            }
         }
         if(star.center.y >= self.view.bounds.size.height) {
             computer_score_value++;
             computer_score_back.hidden = NO;
-            [self reset:(computer_score_value >= SCORE_TO_WIN)];
+            if(game_state != GAME_STATE_RUNNING_INFINITE){
+                [self reset:(computer_score_value >= SCORE_TO_WIN)];
+            }else{
+                if((computer_score_value >= SCORE_TO_WIN)&&([highScoreUpdater isLocalHighScore:[NSNumber numberWithInt:player_score_value]] || [highScoreUpdater isNetworkHighScore:[NSNumber numberWithInt:player_score_value]])){
+                    NSLog(@"Get Initials");
+                    NSUInteger temp = player_score_value;
+                    [self reset:TRUE];
+                    [self getInitialsForScore:temp];
+                    
+                }else{
+                    [self reset:(computer_score_value >= SCORE_TO_WIN)];
+                }
+            }
         }
 
         
@@ -168,6 +185,17 @@
         }
     }
 }
+
+-(void)resetInfinite{
+    self.game_state = GAME_STATE_PAUSED;
+    star.center = self.view.center;
+    star_shadow.center = CGPointMake(self.view.center.x - 5, self.view.center.y - 5);
+    start_message.text = @"Tap To Begin!";
+    
+    player_score.text = [NSString stringWithFormat:@"%d", player_score_value];
+    computer_score.text = [NSString stringWithFormat:@"%d", computer_score_value];
+}
+
 
 - (void)reset:(BOOL)newGame {
     self.game_state = GAME_STATE_PAUSED;
@@ -190,6 +218,30 @@
     }
     player_score.text = [NSString stringWithFormat:@"%d", player_score_value];
     computer_score.text = [NSString stringWithFormat:@"%d", computer_score_value];
+}
+
+-(void)getInitialsForScore:(NSUInteger)newScore{
+    game_state == GAME_STATE_HIGHSCORE;
+    NSString * title = [NSString stringWithFormat:@"Score: %i  - Enter your initials:", newScore];
+    UIAlertView * highScorePrompt = [[UIAlertView alloc] initWithTitle:title message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Submit" , nil];
+    initialsTextField = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 45.0, 260.0, 25.0)]; 
+    [initialsTextField setBackgroundColor:[UIColor whiteColor]]; 
+    [highScorePrompt addSubview:initialsTextField];
+    [highScorePrompt show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != [alertView cancelButtonIndex])
+    {
+        NSString *entered = [initialsTextField text];
+        NSLog(@"You typed: %@", entered);
+    }
+    
+    game_state == GAME_STATE_PAUSED;
+
+    
 }
 
 - (void)viewDidLoad

@@ -13,13 +13,14 @@
 		846199BB1538D73900A1BA7A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 846199BA1538D73900A1BA7A /* libz.dylib */; };
 		846199BE1538D77200A1BA7A /* HighScoreModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199BD1538D77200A1BA7A /* HighScoreModalViewController.m */; };
 		846199C11538D79600A1BA7A /* HighScoreUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199C01538D79600A1BA7A /* HighScoreUpdater.m */; };
-		846199C41538DB9B00A1BA7A /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199C31538DB9B00A1BA7A /* Score.m */; };
 		846199C71538E49B00A1BA7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199C61538E49B00A1BA7A /* ViewController.m */; };
 		846199CE1538E85C00A1BA7A /* start-screen-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199CD1538E85C00A1BA7A /* start-screen-01.png */; };
 		846199D01538E86C00A1BA7A /* High-scores-screen-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199CF1538E86C00A1BA7A /* High-scores-screen-01.png */; };
 		846199D21538E87400A1BA7A /* high-scores-button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199D11538E87400A1BA7A /* high-scores-button-01.png */; };
 		846199D41538E88000A1BA7A /* Battle-button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199D31538E88000A1BA7A /* Battle-button-01.png */; };
 		846199D61538E88700A1BA7A /* back-button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199D51538E88700A1BA7A /* back-button-01.png */; };
+		846199D81538EEF500A1BA7A /* quit-button-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 846199D71538EEF500A1BA7A /* quit-button-01.png */; };
+		846199DB1538FF0B00A1BA7A /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 846199DA1538FF0A00A1BA7A /* Score.m */; };
 		A824D3D215388CA700B80A48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D115388CA700B80A48 /* UIKit.framework */; };
 		A824D3D415388CA700B80A48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D315388CA700B80A48 /* Foundation.framework */; };
 		A824D3D615388CA700B80A48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A824D3D515388CA700B80A48 /* CoreGraphics.framework */; };
@@ -68,8 +69,6 @@
 		846199BD1538D77200A1BA7A /* HighScoreModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreModalViewController.m; sourceTree = "<group>"; };
 		846199BF1538D79600A1BA7A /* HighScoreUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreUpdater.h; sourceTree = "<group>"; };
 		846199C01538D79600A1BA7A /* HighScoreUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreUpdater.m; sourceTree = "<group>"; };
-		846199C21538DB9B00A1BA7A /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
-		846199C31538DB9B00A1BA7A /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		846199C51538E49B00A1BA7A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		846199C61538E49B00A1BA7A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		846199CD1538E85C00A1BA7A /* start-screen-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-screen-01.png"; sourceTree = "<group>"; };
@@ -77,6 +76,9 @@
 		846199D11538E87400A1BA7A /* high-scores-button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "high-scores-button-01.png"; sourceTree = "<group>"; };
 		846199D31538E88000A1BA7A /* Battle-button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Battle-button-01.png"; sourceTree = "<group>"; };
 		846199D51538E88700A1BA7A /* back-button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button-01.png"; sourceTree = "<group>"; };
+		846199D71538EEF500A1BA7A /* quit-button-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quit-button-01.png"; sourceTree = "<group>"; };
+		846199D91538FF0A00A1BA7A /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		846199DA1538FF0A00A1BA7A /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		A824D3CD15388CA700B80A48 /* pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A824D3D115388CA700B80A48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A824D3D315388CA700B80A48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +145,7 @@
 		846199CC1538E83E00A1BA7A /* Game Images */ = {
 			isa = PBXGroup;
 			children = (
+				846199D71538EEF500A1BA7A /* quit-button-01.png */,
 				846199D51538E88700A1BA7A /* back-button-01.png */,
 				846199D31538E88000A1BA7A /* Battle-button-01.png */,
 				846199D11538E87400A1BA7A /* high-scores-button-01.png */,
@@ -214,8 +217,8 @@
 				846199BD1538D77200A1BA7A /* HighScoreModalViewController.m */,
 				846199BF1538D79600A1BA7A /* HighScoreUpdater.h */,
 				846199C01538D79600A1BA7A /* HighScoreUpdater.m */,
-				846199C21538DB9B00A1BA7A /* Score.h */,
-				846199C31538DB9B00A1BA7A /* Score.m */,
+				846199D91538FF0A00A1BA7A /* Score.h */,
+				846199DA1538FF0A00A1BA7A /* Score.m */,
 				A824D3D815388CA700B80A48 /* Supporting Files */,
 			);
 			path = pong;
@@ -343,6 +346,7 @@
 				846199D21538E87400A1BA7A /* high-scores-button-01.png in Resources */,
 				846199D41538E88000A1BA7A /* Battle-button-01.png in Resources */,
 				846199D61538E88700A1BA7A /* back-button-01.png in Resources */,
+				846199D81538EEF500A1BA7A /* quit-button-01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +386,8 @@
 				A824D3EB15388CA700B80A48 /* GameViewController.m in Sources */,
 				846199BE1538D77200A1BA7A /* HighScoreModalViewController.m in Sources */,
 				846199C11538D79600A1BA7A /* HighScoreUpdater.m in Sources */,
-				846199C41538DB9B00A1BA7A /* Score.m in Sources */,
 				846199C71538E49B00A1BA7A /* ViewController.m in Sources */,
+				846199DB1538FF0B00A1BA7A /* Score.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
